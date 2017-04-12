@@ -26,7 +26,7 @@ const Register = React.createClass({
 					<input type = 'text' placeholder='Inputs' /><br/>
 					<input type = 'checkbox'/><label>I agree to Finnest's <a href='/termsofuse'>Terms of Use</a></label><br/>
 					<hr />
-					<Link to='/register'><button className='orangebutton'>Submit</button></Link>
+					<Link to='/login'><button className='orangebutton'>Submit</button></Link>
 				</div>
 			</div>
 		)
