@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router' // eslint-disable-line no-unused-vars
 
-const Home = React.createClass({
+const TermsOfUse = React.createClass({
 	render () {
 		return (
-			<div className = 'home'>
+			<div className = 'termsofuse'>
 				<header>
 					<a href='/'><img src='public/img/1.png' /></a>
 					<div>
@@ -13,16 +13,15 @@ const Home = React.createClass({
 					</div>
 				</header>
 				<div>
-					<h1>Learn Money. Start Saving.</h1>
-					<h2>Sign up tp become one of our early birds!</h2>
-					<div>
-						<Link to='/login'><button className='orangebutton'>Sign In</button></Link><br/>
-						<Link to='/register'><button>Sign Up</button></Link>
-					</div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+					<h1>Term of Use</h1>
 				</div>
 			</div>
 		)
 	}
 })
 
-export default Home
+export default TermsOfUse

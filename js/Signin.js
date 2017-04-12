@@ -16,10 +16,10 @@ const Signin = React.createClass({
 					<input type = 'text' placeholder='Email' /><br/>
 					<input type = 'text' placeholder='Password' /><br/>
 					<input type = 'checkbox'/><label>remember me</label><br/>
-					<Link to='/dashboard'>Log In</Link>
+					<Link to='/dashboard' ><button className='orangebutton'>Log In</button></Link>
 					<hr />
 					<p>New to Finnest?</p>
-					<Link to='/register'>Sign Up</Link>
+					<Link to='/register'><button>Sign Up</button></Link>
 				</div>
 			</div>
 		)
