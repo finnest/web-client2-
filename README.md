@@ -1,20 +1,36 @@
-# web-client2-
+# Finnest Initial Project Design
 
 This directory contains rough sketch of Finnest Web App front-end.
 
-To run the project
+## HOW TO RUN:
+  1. 'npm install' (to install node modules)
+  2. 'npm run build' (to build static bundle w/ webpack)
+  3. 'npm run dev' (to run webpack dev server )
+  4. http://localhost:8080 on web browser
 
-1). npm install
-2). npm run build
- (if there's warning about export 'BrowserRouter' and some other scripts not found in react-router, run 'npm install -save react-router@4.0.0-alpha.6' and then run 'npm run build' again)
-3). npm run dev
-4). open your browser and navigate to localhost:8080
+## USER FLOW:
+  Homepage
 
-Basic User Flow:
+  ↓↓
 
-															  -> register a kid
-home page -> sign in -> (another sign up entrance here)log in -> make a transfer
-		 ↓													  -> track history
-		  -> sign up -> sign up complete ->log in
-		  			 ↓*					↑*	
-		  			 ->read term of use 
+  Parent Registration/Login
+
+  ↓↓↓
+
+  [ Child Registration, Transfer Money, Account History ]
+
+  ** -> Terms of Use
+
+## DIRECTORY STRUCTURE:
+
+     web-client2-/
+     ├── index.html
+     └── public/------------------ Webpack bundle directory
+         ├── bundle.js ----------- Webpack bundle
+         └── img/ ---------------- imgs
+     └── js/
+         ├── App.js -------------- Root Component
+         ├── components/ --------- React Components
+         ├── actions/ ------------ Redux actions
+         ├── containers/ --------- Redux-aware React Components
+         └── reducers/ ----------- Redux reducers
