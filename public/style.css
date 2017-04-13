@@ -14,7 +14,12 @@ html {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(public/img/placeholder2.png);
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/1084130/hero-3_f9kwmt.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -22,6 +27,10 @@ html {
   justify-content: center;
   text-align: center;
   color: #333;
+}
+
+.homepage-text {
+  color: white;
 }
 
 .termsofuse, .transfer, .tracking{
@@ -108,14 +117,14 @@ header {
   left: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
   /*background-color: transparent;*/
   padding: 8px 30px;
 }
 
 header > a > img {
   height: 50px;
-  width: 50px;
+  /*width: 50px;*/
 }
 
 header > div > a {
