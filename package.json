@@ -1,17 +1,15 @@
 {
-  "name": "learning_react",
+  "name": "Finnest",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint js/**/*.js webpack.config.js",
     "build": "webpack",
-    "dev": "webpack-dev-server",
-    "watch": "webpack --watch"
+    "dev": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Xuan Cui, Linglu Wang, Matthew Liu, Caleb Kim, Joseph Yoo",
   "license": "ISC",
-  "description": "",
+  "description": "Project Web Design for Finnest App",
   "dependencies": {
     "babel-core": "^6.24.1",
     "css-loader": "^0.28.0",
