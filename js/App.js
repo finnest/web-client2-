@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { BrowserRouter, Match } from 'react-router' // eslint-disable-line no-unused-vars
+import { BrowserRouter, Route } from 'react-router-dom' // eslint-disable-line no-unused-vars
 import Home from './components/Home'
 import Register from './components/Register'
 import Signin from './components/Signin'
@@ -17,14 +17,14 @@ const App = React.createClass({ // eslint-disable-line no-unused-vars
 		return (
 			<BrowserRouter>
 				<div className = 'app'>
-					<Match exactly pattern='/' component={Home} />
-					<Match exactly pattern='/login' component={Signin} />
-					<Match exactly pattern='/register' component={Register} />
-					<Match exactly pattern='/dashboard' component={Dashboard} />
-					<Match exactly pattern='/register-child' component={RegisterChild} />
-					<Match exactly pattern='/termsofuse' component={TermOfUse} />
-					<Match exactly pattern='/transfer' component={Transfer} />
-					<Match exactly pattern='/history' component={Tracking} />
+					<Route exact={true} path='/' component={Home} />
+					<Route exact={true} path='/login' component={Signin} />
+					<Route exact={true} path='/register' component={Register} />
+					<Route exact={true} path='/dashboard' component={Dashboard} />
+					<Route exact={true} path='/register-child' component={RegisterChild} />
+					<Route exact={true} path='/termsofuse' component={TermOfUse} />
+					<Route exact={true} path='/transfer' component={Transfer} />
+					<Route exact={true} path='/history' component={Tracking} />
 				</div>
 			</BrowserRouter>
 		)
