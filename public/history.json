@@ -1,0 +1,87 @@
+{
+	"username":"",
+	"cardbalance":"$5.64",
+	"nestsize":"$130.00",
+	"totalbalance":"$135.64",
+	"transactions": [{
+		"icon":"rcv.png",
+		"tag":"Weekly Allowance",
+		"amount":"+$12.00",
+		"date":"September 20"
+	}, {
+		"icon":"appstore.png",
+		"tag":"APL ITUNES Store",
+		"amount":"-$0.99",
+		"date":"September 17"
+	},{
+		"icon":"cart.png",
+		"tag":"Whole Foods",
+		"amount":"-$7.94",
+		"date":"September 17"
+	},{
+		"icon":"healthy.png",
+		"tag":"CVS/PHARMACY #132",
+		"amount":"-$1.94",
+		"date":"September 10"
+	},{
+		"icon":"rcv.png",
+		"tag":"Weekly Allowance",
+		"amount":"+$12.00",
+		"date":"September 20"
+	}, {
+		"icon":"appstore.png",
+		"tag":"APL ITUNES Store",
+		"amount":"-$0.99",
+		"date":"September 17"
+	},{
+		"icon":"cart.png",
+		"tag":"Whole Foods",
+		"amount":"-$7.94",
+		"date":"September 17"
+	},{
+		"icon":"healthy.png",
+		"tag":"CVS/PHARMACY #132",
+		"amount":"-$1.94",
+		"date":"September 10"
+	},{
+		"icon":"rcv.png",
+		"tag":"Weekly Allowance",
+		"amount":"+$12.00",
+		"date":"September 20"
+	}, {
+		"icon":"appstore.png",
+		"tag":"APL ITUNES Store",
+		"amount":"-$0.99",
+		"date":"September 17"
+	},{
+		"icon":"cart.png",
+		"tag":"Whole Foods",
+		"amount":"-$7.94",
+		"date":"September 17"
+	},{
+		"icon":"healthy.png",
+		"tag":"CVS/PHARMACY #132",
+		"amount":"-$1.94",
+		"date":"September 10"
+	},{
+		"icon":"rcv.png",
+		"tag":"Weekly Allowance",
+		"amount":"+$12.00",
+		"date":"September 20"
+	}, {
+		"icon":"appstore.png",
+		"tag":"APL ITUNES Store",
+		"amount":"-$0.99",
+		"date":"September 17"
+	},{
+		"icon":"cart.png",
+		"tag":"Whole Foods",
+		"amount":"-$7.94",
+		"date":"September 17"
+	},{
+		"icon":"healthy.png",
+		"tag":"CVS/PHARMACY #132",
+		"amount":"-$1.94",
+		"date":"September 10"
+	}]
+}
