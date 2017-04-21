@@ -33,6 +33,10 @@ html {
   color: white;
 }
 
+.homepage-text > div{
+  margin-top: 40px;
+}
+
 .termsofuse, .transfer, .tracking{
   text-align: center;;
 }
@@ -229,6 +233,11 @@ header > div > a {
   margin-right: 10px;
   padding: 9px;
   text-decoration: none;
+}
+
+.home  > header > div > a,
+.signin > header > div > a {
+  color: lightgray;
 }
 
 @-moz-keyframes spin {
