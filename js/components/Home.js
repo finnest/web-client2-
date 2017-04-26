@@ -14,9 +14,9 @@ const Home = React.createClass({
 				</header>
 				<div className='homepage-text'>
 					<h1>Learn Money. Start Saving.</h1>
-					<h2>Sign up up become one of our early birds!</h2>
+					<p>A debit card designed for kids and parents</p>
 					<div>
-						<Link to='/login'><button className='orangebutton'>Sign In</button></Link><br/>
+						<Link to='/login' style={{cursor:'pointer'}}><button className='orangebutton'>Sign In</button></Link><br/>
 						<Link to='/register'><button>Sign Up</button></Link>
 					</div>
 				</div>

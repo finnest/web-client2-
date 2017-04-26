@@ -13,8 +13,8 @@ const Signin = React.createClass({
 					</div>
 				</header>
 				<div>
-					<input type = 'text' placeholder='Email' /><br/>
-					<input type = 'text' placeholder='Password' /><br/>
+					<input type = 'email' placeholder='Email' /><br/>
+					<input type = 'password' placeholder='Password' /><br/>
 					<input type = 'checkbox'/><label>remember me</label><br/>
 					<Link to='/dashboard' ><button className='orangebutton'>Log In</button></Link>
 					<hr />

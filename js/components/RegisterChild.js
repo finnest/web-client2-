@@ -9,6 +9,7 @@ const RegisterChild = React.createClass({
 					<a href='/'><img src='public/img/1.png' /></a>
 					<div>
 						<Link to='/dashboard'>My Account</Link>
+						<Link to='/' id="logout">Log out</Link>
 					</div>
 				</header>
 				<div>
@@ -19,7 +20,7 @@ const RegisterChild = React.createClass({
 					<input type = 'text' placeholder='Phone Number' /><br/>
 					<input type = 'checkbox'/><label>I agree to Finnest's <a href='/termsofuse'>Terms of Use</a></label><br/>
 					<hr />
-					<Link to='/register'><button className='orangebutton'>Register My Kid</button></Link>
+					<Link to='/dashboard'><button className='orangebutton'>Register My Kid</button></Link>
 				</div>
 			</div>
 		)

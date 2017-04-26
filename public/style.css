@@ -1,6 +1,12 @@
-/*
-   Hi, this is bad CSS, you shouldn't structure your CSS this way. Structurally based CSS is a bad idea because it's inherently brittle; if you change the way your nest something you break it. I'm doing it this way because it's less typing for everyone involved to not have to type long class names
-*/
+@font-face {
+  font-family: titleFont;
+  src: url(http://fonts.gstatic.com/s/nunito/v8/TttUCfJ272GBgSKaOaD7KpBw1xU1rKptJj_0jans920.woff2);
+}
+
+@font-face {
+  font-family: subTitle;
+  src: url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2);
+}
 
 * {
   box-sizing: border-box;;
@@ -33,6 +39,16 @@ html {
   color: white;
 }
 
+.homepage-text h1 {
+  font-family: titleFont;
+  font-size: 43px;
+}
+
+.homepage-text p {
+  font-family: subTitle;
+  font-size: 20px;
+}
+
 .homepage-text > div{
   margin-top: 40px;
 }
@@ -54,6 +70,16 @@ html {
   color: #333;
 }
 
+.dashboard > .menu a {
+  text-decoration: none;
+}
+
+.dashboard > .menu h4 {
+  font-size: 20px;
+  font-family: titleFont;
+  color: black;
+}
+
 .register > div {
   margin-top: 500px;
 }
@@ -63,14 +89,14 @@ html {
 }
 
 .menu {
-  width: 90%;
+  width: 80%;
   display: flex;
   padding-top: 120px;
 }
 
 .menu > div {
-  width: 33%;
-  margin: 10px;
+  width: 30%;
+  margin: 3%;
   padding: 10px;
 }
 
@@ -80,13 +106,24 @@ html {
   height: 80%;
 }
 
+.menu > div > a > img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: .3s ease-in-out;
+}
+
 .signin > div {
   background-color: rgba(220, 220, 220, .7);
   padding: 30px 30px;
   border-radius: 5px;
 }
 
-input[type=text] {
+input[type='text'],
+input[type='email'],
+input[type='text'],
+input[type='tel'],
+input[type='password']
+{
   height: 40px;
   width: 300px;
   margin:10px;
@@ -103,28 +140,64 @@ button {
   border-radius: 35px;
   text-decoration: none;
   color: black;
+  background: rgb(220, 220, 220);
 }
 
 .orangebutton {
   background-color: #e56c40;
 }
 
-.tracking {
+.tracking > .container {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.tracking > .container > .colomn-left {
+  margin-left: 6%;
+  width: 23%; 
+  display: inline-block;
+}
+
+.tracking > .container > .colomn-left > .sidebar-compo {
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgb(230,230,230);
+}
+
+.tracking > .container > .colomn-left > .sidebar-compo > h3,
+.tracking > .container > .colomn-left > .sidebar-compo > p
+{
+  display: inline;
+}
+
+.tracking > .container > .colomn-right {
   text-align: center;
+  width: 65%;
+  margin-right: 4%;
+  margin-left: 2%;
+  display: inline-block;
 }
 
-.tracking > .balance {
-  margin-top: 200px;
+.tracking > .container > .colomn-right > .filter {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.tracking > .balance > div {
+.tracking > .container > .colomn-right > .filter > select {
+ margin-left: 10%;
+ margin-right: 10%;
+}
+
+.tracking > .container > .colomn-right > .balance > div {
   display: inline-block;
   height: 80px;
   line-height: 40px;
   width: 35%;
 }
 
-.tracking > .trackinglist {
+.tracking > .container > .colomn-right > .trackinglist {
   border-top: solid;
   border-color: #e56c40;
   text-align: center;
@@ -132,14 +205,14 @@ button {
   width: 80%;
 }
 
-.tracking > .trackinglist > ul {
+.tracking > .container > .colomn-right > .trackinglist > ul {
   margin-top: 0;
   padding-left: 0;
   text-decoration: none;
   list-style: none;
 }
 
-.tracking > .trackinglist > ul > li{
+.tracking > .container > .colomn-right > .trackinglist > ul > li{
   position: relative;
   width: 100%;
 }
@@ -147,13 +220,14 @@ button {
 .transaction {
   width: 100%;
   min-width: 500px;
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   vertical-align: middle;
   border-bottom: solid;
   border-width: 1px;
   border-color: lightgray;
+  font-size: 14px;
 }
 
 .transaction > span{
@@ -189,14 +263,14 @@ button {
   left: 80%;
 }
 
-.transaction > img{
+.transaction > img {
   position: absolute;
   left: 2%;
   display: inline-block;
-  line-height: 50px;
+  line-height: 40px;
   margin-top: 7px;
   vertical-align: middle;
-  height: 35px;
+  height: 26px;
 }
 
 header {
@@ -206,38 +280,114 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*text-align: center;*/
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
-  /*background-color: #fafafa;*/
-  /*background-color: transparent;*/
   padding: 8px 30px;
+}
+
+.dashboard > header,
+.register > header,
+.register-child > header,
+.tracking > header,
+.termsofuse > header,
+.transfer > header
+ {
+  background-color: rgb(255,255,255);
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(230,230,230);
 }
 
 header > a > img {
   height: 50px;
-  /*width: 50px;*/
 }
 
-header > div > a {
+.home  > header > div > a:not(#logout),
+.signin > header > div > a:not(#logout){
+  color: lightgray;
+  border-color: lightgray;
+}
+
+header > div > a:not(#logout){
   color: black;
   width: 60px;
   height: 20px;
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-color: gray;
-  border-radius: 15px;
+  border-radius: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 9px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#logout {
+  color: black;
+  width: 60px;
+  height: 20px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 9px;
   text-decoration: none;
 }
 
-.home  > header > div > a,
-.signin > header > div > a {
-  color: lightgray;
+.transfer > div > h1 {
+  font-family: titleFont;
+}
+
+.kidsimgs {
+  height: 270px;
+  position: relative;
+}
+
+.kidsimgs > input[type="image"]{
+  border-style: double;
+  border-width: 3px;
+  border-color: rgb(230,230,230);
+  margin:60px;
+  height: 150px;
+  border-radius: 90px;
+  outline: none;
+}
+
+@keyframes imgboy {
+  0% {position:absolute; right: -20px;}
+  100% {right: 22%; }
+}
+
+@keyframes imggirl {
+  0% {position:absolute; left: -20px;}
+  100% {left: 22%; }
+}
+
+.kidsimgs > input[type="image"]:hover {
+  box-shadow: 0 0 10px rgba(35, 173, 278, 1);
+}
+
+#boyimg {
+  animation-name: imgboy;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+#girlimg {
+  animation-name: imggirl;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+.transfer form > input {
+  height: 50px;
+  width:300px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 50px;
+  font-size: 30px;
+  font-family: subTitle;
 }
 
 @-moz-keyframes spin {

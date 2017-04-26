@@ -13,14 +13,14 @@ const Register = React.createClass({
 					</div>
 				</header>
 				<div>
-					<input type = 'text' placeholder='Email' required/><br/>
-					<input type = 'text' placeholder='Password' /><br/>
-					<input type = 'text' placeholder='Confirm Password' /><br/>
+					<input type = 'email' placeholder='Email' required/><br/>
+					<input type = 'password' placeholder='Password' /><br/>
+					<input type = 'password' placeholder='Confirm Password' /><br/>
 					<input type = 'text' placeholder='First Name' /><br/>
 					<input type = 'text' placeholder='Last Name' /><br/>
 					<input type = 'text' placeholder='SSN' /><br/>
 					<input type = 'text' placeholder='Address' /><br/>
-					<input type = 'text' placeholder='Phone Number' /><br/>
+					<input type = 'tel' placeholder='Phone Number' /><br/>
 					<input type = 'text' placeholder='Some' /><br/>
 					<input type = 'text' placeholder='Other' /><br/>
 					<input type = 'text' placeholder='Inputs' /><br/>
